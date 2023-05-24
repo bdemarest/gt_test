@@ -1,7 +1,4 @@
-Test gt table display - Rmd to md
-================
-Bradley Demarest
-2023-05-24
+# Test gt table display - qmd to md
 
 ``` r
 library(tidyverse)
@@ -10,7 +7,7 @@ library(palmerpenguins)
 ```
 
 ``` r
-tbl <- penguins_raw %>% 
+tbl <- penguins_raw %>%
   filter(!is.na(Sex) & !Species %in% "Gentoo penguin (Pygoscelis papua)") %>%
   count(Sex, Species, Island) %>%
   pivot_wider(names_from=Island, values_from=n, values_fill=0L) %>%
@@ -19,23 +16,23 @@ tbl <- penguins_raw %>%
 tbl %>% gt()
 ```
 
-<div id="vjidquichf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#vjidquichf table {
+<div id="tmwolyzgbk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#tmwolyzgbk table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#vjidquichf thead, #vjidquichf tbody, #vjidquichf tfoot, #vjidquichf tr, #vjidquichf td, #vjidquichf th {
+#tmwolyzgbk thead, #tmwolyzgbk tbody, #tmwolyzgbk tfoot, #tmwolyzgbk tr, #tmwolyzgbk td, #tmwolyzgbk th {
   border-style: none;
 }
 
-#vjidquichf p {
+#tmwolyzgbk p {
   margin: 0;
   padding: 0;
 }
 
-#vjidquichf .gt_table {
+#tmwolyzgbk .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -61,12 +58,12 @@ tbl %>% gt()
   border-left-color: #D3D3D3;
 }
 
-#vjidquichf .gt_caption {
+#tmwolyzgbk .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#vjidquichf .gt_title {
+#tmwolyzgbk .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -78,7 +75,7 @@ tbl %>% gt()
   border-bottom-width: 0;
 }
 
-#vjidquichf .gt_subtitle {
+#tmwolyzgbk .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -90,7 +87,7 @@ tbl %>% gt()
   border-top-width: 0;
 }
 
-#vjidquichf .gt_heading {
+#tmwolyzgbk .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -102,13 +99,13 @@ tbl %>% gt()
   border-right-color: #D3D3D3;
 }
 
-#vjidquichf .gt_bottom_border {
+#tmwolyzgbk .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#vjidquichf .gt_col_headings {
+#tmwolyzgbk .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -123,7 +120,7 @@ tbl %>% gt()
   border-right-color: #D3D3D3;
 }
 
-#vjidquichf .gt_col_heading {
+#tmwolyzgbk .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -143,7 +140,7 @@ tbl %>% gt()
   overflow-x: hidden;
 }
 
-#vjidquichf .gt_column_spanner_outer {
+#tmwolyzgbk .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -155,15 +152,15 @@ tbl %>% gt()
   padding-right: 4px;
 }
 
-#vjidquichf .gt_column_spanner_outer:first-child {
+#tmwolyzgbk .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#vjidquichf .gt_column_spanner_outer:last-child {
+#tmwolyzgbk .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#vjidquichf .gt_column_spanner {
+#tmwolyzgbk .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -175,11 +172,11 @@ tbl %>% gt()
   width: 100%;
 }
 
-#vjidquichf .gt_spanner_row {
+#tmwolyzgbk .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#vjidquichf .gt_group_heading {
+#tmwolyzgbk .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -205,7 +202,7 @@ tbl %>% gt()
   text-align: left;
 }
 
-#vjidquichf .gt_empty_group_heading {
+#tmwolyzgbk .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -220,15 +217,15 @@ tbl %>% gt()
   vertical-align: middle;
 }
 
-#vjidquichf .gt_from_md > :first-child {
+#tmwolyzgbk .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#vjidquichf .gt_from_md > :last-child {
+#tmwolyzgbk .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#vjidquichf .gt_row {
+#tmwolyzgbk .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -247,7 +244,7 @@ tbl %>% gt()
   overflow-x: hidden;
 }
 
-#vjidquichf .gt_stub {
+#tmwolyzgbk .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -260,7 +257,7 @@ tbl %>% gt()
   padding-right: 5px;
 }
 
-#vjidquichf .gt_stub_row_group {
+#tmwolyzgbk .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -274,15 +271,15 @@ tbl %>% gt()
   vertical-align: top;
 }
 
-#vjidquichf .gt_row_group_first td {
+#tmwolyzgbk .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#vjidquichf .gt_row_group_first th {
+#tmwolyzgbk .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#vjidquichf .gt_summary_row {
+#tmwolyzgbk .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -292,16 +289,16 @@ tbl %>% gt()
   padding-right: 5px;
 }
 
-#vjidquichf .gt_first_summary_row {
+#tmwolyzgbk .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#vjidquichf .gt_first_summary_row.thick {
+#tmwolyzgbk .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#vjidquichf .gt_last_summary_row {
+#tmwolyzgbk .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -311,7 +308,7 @@ tbl %>% gt()
   border-bottom-color: #D3D3D3;
 }
 
-#vjidquichf .gt_grand_summary_row {
+#tmwolyzgbk .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -321,7 +318,7 @@ tbl %>% gt()
   padding-right: 5px;
 }
 
-#vjidquichf .gt_first_grand_summary_row {
+#tmwolyzgbk .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -331,7 +328,7 @@ tbl %>% gt()
   border-top-color: #D3D3D3;
 }
 
-#vjidquichf .gt_last_grand_summary_row_top {
+#tmwolyzgbk .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -341,11 +338,11 @@ tbl %>% gt()
   border-bottom-color: #D3D3D3;
 }
 
-#vjidquichf .gt_striped {
+#tmwolyzgbk .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#vjidquichf .gt_table_body {
+#tmwolyzgbk .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -354,7 +351,7 @@ tbl %>% gt()
   border-bottom-color: #D3D3D3;
 }
 
-#vjidquichf .gt_footnotes {
+#tmwolyzgbk .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -368,7 +365,7 @@ tbl %>% gt()
   border-right-color: #D3D3D3;
 }
 
-#vjidquichf .gt_footnote {
+#tmwolyzgbk .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -377,7 +374,7 @@ tbl %>% gt()
   padding-right: 5px;
 }
 
-#vjidquichf .gt_sourcenotes {
+#tmwolyzgbk .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -391,7 +388,7 @@ tbl %>% gt()
   border-right-color: #D3D3D3;
 }
 
-#vjidquichf .gt_sourcenote {
+#tmwolyzgbk .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -399,63 +396,63 @@ tbl %>% gt()
   padding-right: 5px;
 }
 
-#vjidquichf .gt_left {
+#tmwolyzgbk .gt_left {
   text-align: left;
 }
 
-#vjidquichf .gt_center {
+#tmwolyzgbk .gt_center {
   text-align: center;
 }
 
-#vjidquichf .gt_right {
+#tmwolyzgbk .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#vjidquichf .gt_font_normal {
+#tmwolyzgbk .gt_font_normal {
   font-weight: normal;
 }
 
-#vjidquichf .gt_font_bold {
+#tmwolyzgbk .gt_font_bold {
   font-weight: bold;
 }
 
-#vjidquichf .gt_font_italic {
+#tmwolyzgbk .gt_font_italic {
   font-style: italic;
 }
 
-#vjidquichf .gt_super {
+#tmwolyzgbk .gt_super {
   font-size: 65%;
 }
 
-#vjidquichf .gt_footnote_marks {
+#tmwolyzgbk .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#vjidquichf .gt_asterisk {
+#tmwolyzgbk .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#vjidquichf .gt_indent_1 {
+#tmwolyzgbk .gt_indent_1 {
   text-indent: 5px;
 }
 
-#vjidquichf .gt_indent_2 {
+#tmwolyzgbk .gt_indent_2 {
   text-indent: 10px;
 }
 
-#vjidquichf .gt_indent_3 {
+#tmwolyzgbk .gt_indent_3 {
   text-indent: 15px;
 }
 
-#vjidquichf .gt_indent_4 {
+#tmwolyzgbk .gt_indent_4 {
   text-indent: 20px;
 }
 
-#vjidquichf .gt_indent_5 {
+#tmwolyzgbk .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -502,7 +499,7 @@ tbl %>% gt()
 tbl %>% gt() %>% as_raw_html()
 ```
 
-<div id="qsufvfmsjg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="lhohqaledc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
   
   <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
   <thead style="border-style: none;">
@@ -547,38 +544,38 @@ tbl %>% gt() %>% as_raw_html()
 sessionInfo()
 ```
 
-    ## R version 4.3.0 (2023-04-21)
-    ## Platform: x86_64-apple-darwin20 (64-bit)
-    ## Running under: macOS Ventura 13.4
-    ## 
-    ## Matrix products: default
-    ## BLAS:   /Library/Frameworks/R.framework/Versions/4.3-x86_64/Resources/lib/libRblas.0.dylib 
-    ## LAPACK: /Library/Frameworks/R.framework/Versions/4.3-x86_64/Resources/lib/libRlapack.dylib;  LAPACK version 3.11.0
-    ## 
-    ## locale:
-    ## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
-    ## 
-    ## time zone: America/Denver
-    ## tzcode source: internal
-    ## 
-    ## attached base packages:
-    ## [1] stats     graphics  grDevices utils     datasets  methods   base     
-    ## 
-    ## other attached packages:
-    ##  [1] palmerpenguins_0.1.1 gt_0.9.0             lubridate_1.9.2     
-    ##  [4] forcats_1.0.0        stringr_1.5.0        dplyr_1.1.2         
-    ##  [7] purrr_1.0.1          readr_2.1.4          tidyr_1.3.0         
-    ## [10] tibble_3.2.1         ggplot2_3.4.2        tidyverse_2.0.0     
-    ## 
-    ## loaded via a namespace (and not attached):
-    ##  [1] jsonlite_1.8.4   gtable_0.3.3     compiler_4.3.0   Rcpp_1.0.10     
-    ##  [5] tidyselect_1.2.0 xml2_1.3.4       scales_1.2.1     yaml_2.3.7      
-    ##  [9] fastmap_1.1.1    R6_2.5.1         generics_0.1.3   curl_5.0.0      
-    ## [13] knitr_1.42       munsell_0.5.0    pillar_1.9.0     tzdb_0.4.0      
-    ## [17] rlang_1.1.1      V8_4.3.0         utf8_1.2.3       stringi_1.7.12  
-    ## [21] xfun_0.39        sass_0.4.6       juicyjuice_0.1.0 timechange_0.2.0
-    ## [25] cli_3.6.1        withr_2.5.0      magrittr_2.0.3   digest_0.6.31   
-    ## [29] grid_4.3.0       rstudioapi_0.14  hms_1.1.3        lifecycle_1.0.3 
-    ## [33] vctrs_0.6.2      evaluate_0.21    glue_1.6.2       fansi_1.0.4     
-    ## [37] colorspace_2.1-0 rmarkdown_2.21   tools_4.3.0      pkgconfig_2.0.3 
-    ## [41] htmltools_0.5.5
+    R version 4.3.0 (2023-04-21)
+    Platform: x86_64-apple-darwin20 (64-bit)
+    Running under: macOS Ventura 13.4
+
+    Matrix products: default
+    BLAS:   /Library/Frameworks/R.framework/Versions/4.3-x86_64/Resources/lib/libRblas.0.dylib 
+    LAPACK: /Library/Frameworks/R.framework/Versions/4.3-x86_64/Resources/lib/libRlapack.dylib;  LAPACK version 3.11.0
+
+    locale:
+    [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+
+    time zone: America/Denver
+    tzcode source: internal
+
+    attached base packages:
+    [1] stats     graphics  grDevices utils     datasets  methods   base     
+
+    other attached packages:
+     [1] palmerpenguins_0.1.1 gt_0.9.0             lubridate_1.9.2     
+     [4] forcats_1.0.0        stringr_1.5.0        dplyr_1.1.2         
+     [7] purrr_1.0.1          readr_2.1.4          tidyr_1.3.0         
+    [10] tibble_3.2.1         ggplot2_3.4.2        tidyverse_2.0.0     
+
+    loaded via a namespace (and not attached):
+     [1] gtable_0.3.3     jsonlite_1.8.4   compiler_4.3.0   Rcpp_1.0.10     
+     [5] tidyselect_1.2.0 xml2_1.3.4       scales_1.2.1     yaml_2.3.7      
+     [9] fastmap_1.1.1    R6_2.5.1         generics_0.1.3   curl_5.0.0      
+    [13] knitr_1.42       munsell_0.5.0    pillar_1.9.0     tzdb_0.4.0      
+    [17] rlang_1.1.1      V8_4.3.0         utf8_1.2.3       stringi_1.7.12  
+    [21] xfun_0.39        sass_0.4.6       juicyjuice_0.1.0 timechange_0.2.0
+    [25] cli_3.6.1        withr_2.5.0      magrittr_2.0.3   digest_0.6.31   
+    [29] grid_4.3.0       rstudioapi_0.14  hms_1.1.3        lifecycle_1.0.3 
+    [33] vctrs_0.6.2      evaluate_0.21    glue_1.6.2       fansi_1.0.4     
+    [37] colorspace_2.1-0 rmarkdown_2.21   tools_4.3.0      pkgconfig_2.0.3 
+    [41] htmltools_0.5.5 

@@ -23,8 +23,6 @@ tbl <- penguins_raw %>%
   pivot_wider(names_from=Island, values_from=n, values_fill=0L) %>%
   group_by(Sex)
 
-tbl %>% gt()
-
 tbl %>% gt() %>% as_raw_html()
 
 ```
