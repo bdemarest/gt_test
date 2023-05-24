@@ -1,0 +1,38 @@
+---
+title: "Test gt table display - qmd to md"
+format: markdown_github
+---
+
+```{r}
+#| label: load-packages
+#| warning: false
+#| message: false
+
+library(tidyverse)
+library(gt)
+library(palmerpenguins)
+
+```
+
+```{r test-table-output}
+#| label: test-table-output
+
+tbl <- penguins_raw %>%
+  filter(!is.na(Sex) & !Species %in% "Gentoo penguin (Pygoscelis papua)") %>%
+  count(Sex, Species, Island) %>%
+  pivot_wider(names_from=Island, values_from=n, values_fill=0L) %>%
+  group_by(Sex)
+
+tbl %>% gt()
+
+tbl %>% gt() %>% as_raw_html()
+
+```
+
+```{r}
+#| label: print-session-info
+
+sessionInfo()
+
+```
+
